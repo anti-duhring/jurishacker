@@ -1,0 +1,33 @@
+{
+  "name": "jurishacker",
+  "description": "Copie qualquer jurisprudência do jusbrasil.com.br",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "declarativeContent"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/favicon.png",
+      "32": "/images/favicon.png",
+      "48": "/images/favicon.png",
+      "128": "/images/favicon.png"
+    }
+  },
+  "icons": {
+    "16": "/images/favicon.png",
+    "32": "/images/favicon.png",
+    "48": "/images/favicon.png",
+    "128": "/images/favicon.png"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://*.jusbrasil.com.br/jurisprudencia/*"],
+      "js": ["copy.js"]
+    }
+  ]
+}
+

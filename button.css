@@ -1,0 +1,41 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+  padding: 0;
+}
+.jurislabel{
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.juriswrapper{
+  padding: 1rem;
+  display: flex;flex-direction: column;flex-wrap: nowrap;row-gap: .5rem;
+}
+textarea#juriscontent {
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: .5rem;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.footer-text {
+  user-select: none;
+  background: black;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+
+span.link-item a {color: blue;text-decoration: revert;}
+
+button#clear {transition: .5s;background: black;color: white;border: 1px solid black;/* border: none; */padding: .5rem 1rem;border-radius: 5px;cursor: pointer;}
+
+button#clear:hover {background: white;color: black;/* border: 1px solid black; */}
